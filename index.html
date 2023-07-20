@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58e6370265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="content-calculator" class="content-calculator">
+        <h1>Calculator</h1>
+        <input type="text" name="viewfinder" id="viewfinder" class="content-viewfinder" readonly>
+        <table>
+            <tr>
+                <td><button class="btn" onclick="clean()"><i class="fa-solid fa-c"></i></button></td>
+                <td><button class="btn" onclick="back()"><i class="fa-solid fa-delete-left"></i></button></td>
+                <td><button class="btn" onclick="inserir('/')"><i class="fa-solid fa-divide"></i></button></td>
+                <td><button class="btn" onclick="inserir('*')"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="inserir('7')">7</button></td>
+                <td><button class="btn" onclick="inserir('8')">8</button></td>
+                <td><button class="btn" onclick="inserir('9')">9</button></td>
+                <td><button class="btn" onclick="inserir('-')"><i class="fa-solid fa-minus"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="inserir('4')">4</button></td>
+                <td><button class="btn" onclick="inserir('5')">5</button></td>
+                <td><button class="btn" onclick="inserir('6')">6</button></td>
+                <td><button class="btn" onclick="inserir('+')"><i class="fa-solid fa-plus"></i></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="inserir('1')">1</button></td>
+                <td><button class="btn" onclick="inserir('2')">2</button></td>
+                <td><button class="btn" onclick="inserir('3')">3</button></td>
+                <td rowspan="2"><button class="btn-equal" onclick="somar()" style="height: 103.8px;"><i class="fa-solid fa-equals"></i></button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="btn" onclick="inserir('0')" style="width: 103.8px;">0</button></td>
+                <td><button class="btn" onclick="inserir('.')">.</button></td>
+            </tr>
+        </table>
+    </div>
+    <div class="mode">
+        <input type="checkbox" class="check-mode" id="chk-mode">
+        <label id="label" class="label-mode" for="chk-mode">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+            <div id="ball-mode" class="ball-mode"></div>
+        </label>
+    </div>
+    <p id="direitos" class="direitos">© Todos os direitos reservados, Bruno Ferreira</p>
+
+</body>
+<script src="./script.js"></script>
+</html>

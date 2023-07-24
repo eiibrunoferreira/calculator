@@ -68,11 +68,11 @@ body {
     border: none;
     border-radius: 10px;
     color: white;
-    background-color: rgb(119, 3, 134);
+    background-color: rgb(243, 116, 31);
 }
 
 .btn-equal:hover {
-    background-color: rgb(95, 3, 107);
+    background-color: rgb(228, 104, 21);
 }
 
 .direitos {
@@ -113,7 +113,7 @@ body {
 }
 
 .label-mode i {
-    color: rgb(119, 3, 134);
+    color: rgb(243, 116, 31);
 }
 
 .ball-mode {
